@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 
 function Hero({title, subtitle, actionTitle, onAction}) {
   return (
@@ -23,6 +23,13 @@ function Hero({title, subtitle, actionTitle, onAction}) {
         </div>
     </section>
   );
+}
+
+Hero.propTypes = {
+    title: PropTypes.any,
+    subtitle: PropTypes.any,
+    actionTitle: PropTypes.string,
+    onAction: PropTypes.func
 }
 
 export default Hero;

@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 
 
 function ProductCard({id, title, content, owner, onClick}) {
@@ -34,5 +36,16 @@ function ProductCard({id, title, content, owner, onClick}) {
       </div>
     );
 };
+
+
+
+ProductCard.propTypes = {
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
+  owner: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired
+}
+
 
 export default ProductCard;

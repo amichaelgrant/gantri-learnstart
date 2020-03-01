@@ -31,11 +31,58 @@ input:invalid {
   color: #1c1c1c;
   font-family: "Source Sans Pro" !important;
 }
+.subtitle{
+  color: #1c1c1c;
+}
 
 .has-text-grey{
   color: #8F8E8B !important;
 }
 
+.is-dark {
+  background-color: #1c1c1c !important;
+}
+
+.button{
+  border-radius: 1px;
+}
+
 .shade{
   background-color: #e4e5e6;
+}
+
+@media all and (min-width: 1024px){
+  h1{
+    font-size: 40px;
+  }
+  h2{
+    font-size: 30px;
+  }
+  h3{
+    font-size: 25px;
+  }
+  p{
+    font-size: 15px;
+  }
+}
+
+@media all and (max-width: 768px){
+  h1{
+    font-size: 30px;
+  }
+  h2{
+    font-size: 25px;
+  }
+  h3{
+    font-size: 20px;
+  }
+  p{
+    font-size: 13px;
+  }
+}
+
+@media all and (max-width: 768px){
+  .modal-background{
+    background-color: #fff;
+  }
 }

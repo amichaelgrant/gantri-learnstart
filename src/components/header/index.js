@@ -9,7 +9,7 @@ function Header() {
 
     return (
         <div className="Header">
-            <nav className="navbar is-light is-spaced" role="navigation" aria-label="main navigation">
+            <nav className="navbar is-light is-spaced is-fixed-top" role="navigation" aria-label="main navigation">
                 <div className="container">
                 <div className="navbar-brand">
                     <Link className="navbar-item" to="/">

@@ -1,7 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 
-function Section({title, subtitle, image, odd, children}) {
+
+function Section({title, subtitle, image, odd, children, backgroundColor}) {
     const textContent = (
         <div className={`column ${(image)? "" : "is-half has-text-centered"}`}>
             <h1 className="title">{title}</h1>
@@ -17,8 +19,12 @@ function Section({title, subtitle, image, odd, children}) {
             </div>
         </div>
     );
+    const backgroundStyle = backgroundColor? {
+        backgroundColor
+    } : {backgroundColor: "#fff"};
     return (
-        <section className="section">
+        <section className="section" 
+            style={backgroundStyle}>
             <div className="container">
                 <div className="columns is-mobile- is-centered is-vcentered is-multiline is-variable is-8">
                     {!odd && (textContent)}
@@ -37,5 +43,17 @@ function Section({title, subtitle, image, odd, children}) {
         </section>
     );
 }
+
+
+
+Section.propTypes = {
+    title: PropTypes.any ,
+    subtitle: PropTypes.any,
+    image: PropTypes.string,
+    odd: PropTypes.bool,
+    children: PropTypes.any,
+    backgroundColor: PropTypes.string
+}
+
 
 export default Section;

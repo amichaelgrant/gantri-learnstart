@@ -22,6 +22,7 @@ function Home(props) {
                     LearnStart is the simplest way for startup founders to discover inspiring stories from startup
                     founders from all over the world, all in one place.
                 `}
+                backgroundColor="#f4f4f4"
             />
             <Section
                 title="Only the hottest startups."
@@ -52,6 +53,7 @@ function Home(props) {
 
             <Section
                 title="Let's get started."
+                backgroundColor="#f4f4f4"
             >
                 <button 
                     className="button is-large is-primary"

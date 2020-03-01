@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import Modal from './index';
 
 
@@ -64,6 +65,14 @@ function SignUpModal({open, children, onClose, onSubmit}) {
             </form>
         </Modal>
     );
+}
+
+
+SignUpModal.propTypes = {
+    open: PropTypes.bool.isRequired ,
+    children: PropTypes.any,
+    onClose: PropTypes.func,
+    onSubmit: PropTypes.func
 }
 
 export default SignUpModal;

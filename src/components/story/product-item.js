@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 
 
 function ProductItem({id, title, content, owner}) {
@@ -15,5 +17,13 @@ function ProductItem({id, title, content, owner}) {
         </div>
     );
 };
+
+
+ProductItem.propTypes = {
+    id: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    content: PropTypes.string.isRequired,
+    owner: PropTypes.string.isRequired
+}
 
 export default ProductItem;

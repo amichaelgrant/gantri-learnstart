@@ -16,6 +16,7 @@ function Stories(props) {
             <Header />
             <Section
                 title="Stories"
+                backgroundColor="#f4f4f4"
             />
 
             <div className="container">
